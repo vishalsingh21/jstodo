@@ -1,0 +1,111 @@
+.container{
+    width: 800px;
+    margin: 100px auto 0;
+}
+.new-todo input{
+    height: 30px;
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+.todo-list{
+    margin-bottom: 15px;
+}
+.todo-list ul{
+    margin: 0;
+    padding: 20px 0;
+}
+.todo-list ul li{
+    list-style: none;
+    height: 50px;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.todo-list ul li .todo-label{
+	display: inline-block;
+}
+.todo-list ul li .edit-todo{
+	display: none;
+}
+.todo-list ul li.editing .edit-todo{
+	display: inline-block;
+}
+.todo-list ul li.editing .todo-label{
+	display: none;
+}
+.todo-list ul li:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.todo-list li span{
+    font-weight: bold;
+    font-size: 40px;
+    float: right;
+    cursor: pointer;
+}
+.todo-list label.completed{
+    text-decoration: line-through;
+    color: #969696;
+}
+.todo-list input.edit-todo{
+    height: 50px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    display: none;
+}
+.todo-list li.editing input.edit-todo{
+    display: inline-block;
+}
+.todo-list li.editing label.todo-label{
+    display: none;
+}
+.todo-list .no-todo{
+    display: none;
+    margin: 20px;
+    font-size: 20px;
+}
+.todo-list.no-todos .no-todo{
+	display: block;
+}
+.todos-info{
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    padding: 15px 0;
+}
+.todos-info>div{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+}
+.todos-info .select-all-todos{
+    width: 20%;
+}
+.todos-info .remaining-todos-count{
+    width: 59%;
+    text-align: center;
+}
+.todos-info .total-todos-count{
+    width: 20%;
+    text-align: right;
+}
+.todo-filters{
+    margin-top: 15px;
+    padding-top: 15px;
+}
+.todo-filters button{
+    padding: 6px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    outline: none;
+}
+.todo-filters button.active{
+    background: #213670;
+    color: #fff;
+}
+.todo-filters button.clear-completed{
+    float: right;
+    margin-right: 0;
+}

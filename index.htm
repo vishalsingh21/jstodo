@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Todo App - JavaScript</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		
+		<div id="todo" class="container">
+			<div class="new-todo">
+				<input id="todoInput" type="text" placeholder="What do you want to do ?">
+			</div>
+			<div class="todo-list">
+				<ul id="todoList">
+					<!-- <li>
+						<input type="checkbox"> 
+						<label class="todo-label">Go for shop</label>
+						<input type="text" class="edit-todo">
+						<span>&Cross;</span>
+					</li> -->
+				</ul>
+				<span class="no-todo">There is no Todo in the list.</span>
+				<div id="todoInfo" class="todos-info">
+					<div class="select-all-todos">
+						<input class="select-all" type="checkbox">
+						<label>Select All</label>
+					</div>
+					<div class="remaining-todos-count">
+						Remaining Todos: <span id="remainingTodos">0</span>
+					</div>
+					<div class="total-todos-count">
+						Total Todos: <span id="totalTodos">0</span>
+					</div>
+				</div>
+				<div id="todoFilter" class="todo-filters">
+					<button type="button" class="filterBtn active" data-filter="all">All</button>
+					<button type="button" class="filterBtn" data-filter="active">Active</button>
+					<button type="button" class="filterBtn" data-filter="completed">Completed</button>
+					<button type="button" class="clear-completed" disabled>Clear Completed</button>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/event-target.js"></script>
+		<script type="text/javascript" src="js/todo.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
